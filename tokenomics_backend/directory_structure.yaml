@@ -1,0 +1,50 @@
+# 🚀 Estrutura do Projeto: Tokenomics Backend
+# 📝 Descrição: Documentação da estrutura de pastas e arquivos.
+# 📅 Versão: 1.0
+
+project:
+  name: Tokenomics Backend Project
+  description: Estrutura do projeto API FastAPI com foco em Tokenomics.
+  version: '1.0'
+  structure:
+    .gitignore: null
+    app:
+      application:
+        __init__.py: null
+      background_tasks:
+        __init__.py: null
+      config:
+        logging.yaml: null
+        settings.yaml: null
+      db:
+        consensus_network.db: null
+        network_database.db: null
+      domain:
+        __init__.py: null
+      events:
+        __init__.py: null
+      infrastructure:
+        __init__.py: null
+      main.py: null
+      presentation:
+        __init__.py: null
+      tests:
+        __init__.py: null
+    ci_cd:
+      pipeline.yaml: null
+    docs:
+      README.md: null
+    infra:
+      ansible:
+        playbook.yaml: null
+      docker:
+        Dockerfile: null
+      gitops:
+        config.yaml: null
+      kubernetes:
+        deployment.yaml: null
+      terraform:
+        main.tf: null
+    scripts:
+      setup.sh: null
+      start.sh: null
