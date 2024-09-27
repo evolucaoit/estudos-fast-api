@@ -9,6 +9,9 @@ project:
   structure:
     app:
       .gitignore: null
+      app:
+        config:
+          logging.yaml: null
       application:
         __init__.py: null
       background_tasks:
@@ -98,6 +101,7 @@ project:
         config.py: null
         __init__.py: null
       __init__.py: null
+      __pycache__:
+        main.cpython-311.pyc: null
+        __init__.cpython-311.pyc: null
     cria-estrutura-projeto-base-v1-fast-api-tokenomics-base-boilerplate.py: null
-    databases_structure.yaml: null
-    databases_structure_detailed.yaml: null
