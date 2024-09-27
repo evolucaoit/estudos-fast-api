@@ -403,8 +403,8 @@ project:
         default_value: null
         primary_key: false
     size_bytes: 69632
-    created: '2024-09-27T13:06:24.585710'
-    modified: '2024-09-27T13:06:25.437219'
+    created: '2024-09-27T13:33:52.131308'
+    modified: '2024-09-27T13:33:53.284595'
   - name: network_database.db
     location: tokenomics_backend\app\db\network_database.db
     tables:
@@ -628,38 +628,6 @@ project:
       - column_name: available_quantity
         data_type: INTEGER
         not_null: true
-        default_value: null
-        primary_key: false
-    - table_name: services
-      columns:
-      - column_name: id
-        data_type: INTEGER
-        not_null: false
-        default_value: null
-        primary_key: true
-      - column_name: service_name
-        data_type: TEXT
-        not_null: true
-        default_value: null
-        primary_key: false
-      - column_name: description
-        data_type: TEXT
-        not_null: false
-        default_value: null
-        primary_key: false
-      - column_name: hourly_rate
-        data_type: REAL
-        not_null: true
-        default_value: null
-        primary_key: false
-      - column_name: token_id
-        data_type: INTEGER
-        not_null: true
-        default_value: null
-        primary_key: false
-      - column_name: provider_wallet_id
-        data_type: INTEGER
-        not_null: false
         default_value: null
         primary_key: false
     - table_name: clients
@@ -992,6 +960,6 @@ project:
         not_null: false
         default_value: null
         primary_key: false
-    size_bytes: 106496
-    created: '2024-09-27T13:04:16.580153'
-    modified: '2024-09-27T13:04:17.708182'
+    size_bytes: 102400
+    created: '2024-09-27T15:02:33.556700'
+    modified: '2024-09-27T15:02:34.608209'

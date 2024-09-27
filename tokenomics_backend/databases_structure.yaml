@@ -10,10 +10,10 @@ project:
   - name: consensus_network.db
     location: tokenomics_backend\app\db\consensus_network.db
     size_bytes: 69632
-    created: '2024-09-27T13:06:24.585710'
-    modified: '2024-09-27T13:06:25.437219'
+    created: '2024-09-27T13:33:52.131308'
+    modified: '2024-09-27T13:33:53.284595'
   - name: network_database.db
     location: tokenomics_backend\app\db\network_database.db
-    size_bytes: 106496
-    created: '2024-09-27T13:04:16.580153'
-    modified: '2024-09-27T13:04:17.708182'
+    size_bytes: 102400
+    created: '2024-09-27T15:02:33.556700'
+    modified: '2024-09-27T15:02:34.608209'

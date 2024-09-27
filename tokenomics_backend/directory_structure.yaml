@@ -25,13 +25,16 @@ project:
         app.py: null
         config.py: null
         __init__.py: null
+        __pycache__:
+          app.cpython-311.pyc: null
+          __init__.cpython-311.pyc: null
       database:
         app.py: null
         config.py: null
         __init__.py: null
-      databases_structure.yaml: null
-      databases_structure_detailed.yaml: null
-      directory_structure.yaml: null
+      db:
+        consensus_network.db: null
+        network_database.db: null
       docs:
         README.md: null
       domain:
@@ -56,9 +59,13 @@ project:
         app.py: null
         config.py: null
         __init__.py: null
+        __pycache__:
+          app.cpython-311.pyc: null
+          __init__.cpython-311.pyc: null
       models:
         app.py: null
         config.py: null
+        wallet.py: null
         __init__.py: null
       presentation:
         __init__.py: null
@@ -66,6 +73,9 @@ project:
         app.py: null
         config.py: null
         __init__.py: null
+        __pycache__:
+          app.cpython-311.pyc: null
+          __init__.cpython-311.pyc: null
       schemas:
         app.py: null
         config.py: null
@@ -80,8 +90,14 @@ project:
       tests:
         app.py: null
         config.py: null
+        reports: {}
+        test_api.py: null
         __init__.py: null
       utils:
         app.py: null
         config.py: null
         __init__.py: null
+      __init__.py: null
+    cria-estrutura-projeto-base-v1-fast-api-tokenomics-base-boilerplate.py: null
+    databases_structure.yaml: null
+    databases_structure_detailed.yaml: null

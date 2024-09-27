@@ -1,11 +1,12 @@
 from fastapi import FastAPI
-from controllers.app import router as wallet_router
+from .routes.app import router as wallet_router
+from .middlewares.app import log_requests
 import logging
 import logging.config
 import yaml
 import os
 
-# Carregar configurações de logging
+# Função para carregar configurações de logging
 def load_logging_config():
     config_path = "app/config/logging.yaml"
     
@@ -16,7 +17,7 @@ def load_logging_config():
         config = yaml.safe_load(f)
         
         if config is None:
-            raise ValueError("A configuração de logging não pode ser None. Verifique o conteúdo de logging.yaml.")
+            raise ValueError("A configuração de logging não pode ser None.")
         
         logging.config.dictConfig(config)
 
@@ -29,10 +30,13 @@ try:
 except Exception as e:
     print(f"Erro ao carregar configurações de logging: {e}")
 
+# Adicionar middleware de logging de requisições
+app.middleware("http")(log_requests)
+
 # Incluir o router de wallets e outras rotas
 app.include_router(wallet_router, prefix="/api")
 
-# Rota de exemplo para verificar se a aplicação está funcionando
+# Rota de exemplo
 @app.get("/")
 async def read_root():
     return {"message": "API de gerenciamento de carteiras está funcionando!"}
