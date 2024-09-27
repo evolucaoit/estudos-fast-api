@@ -12,7 +12,6 @@ cursor = conn.cursor()
 
 # Função para criar as tabelas e colunas do banco de dados
 def create_tables():
-    # Grupos de dados baseados em tokenomics B2B e B2C
     # Grupo 1: Informações de Usuários
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS users (
@@ -41,6 +40,7 @@ def create_tables():
     )
     ''')
     
+    # Grupo 3: Tokens
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS tokens (
         id INTEGER PRIMARY KEY,
@@ -53,7 +53,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 3: Transações
+    # Grupo 4: Transações
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS transactions (
         id INTEGER PRIMARY KEY,
@@ -70,7 +70,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 4: Contratos Inteligentes (Smart Contracts)
+    # Grupo 5: Contratos Inteligentes (Smart Contracts)
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS smart_contracts (
         id INTEGER PRIMARY KEY,
@@ -83,7 +83,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 5: Produtos e Serviços
+    # Grupo 6: Produtos e Serviços
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS products (
         id INTEGER PRIMARY KEY,
@@ -96,20 +96,7 @@ def create_tables():
     )
     ''')
     
-    cursor.execute('''
-    CREATE TABLE IF NOT EXISTS services (
-        id INTEGER PRIMARY KEY,
-        service_name TEXT NOT NULL,
-        description TEXT,
-        hourly_rate REAL NOT NULL,
-        token_id INTEGER NOT NULL,
-        provider_wallet_id INTEGER,
-        FOREIGN KEY(token_id) REFERENCES tokens(id),
-        FOREIGN KEY(provider_wallet_id) REFERENCES wallets(id)
-    )
-    ''')
-    
-    # Grupo 6: Clientes e Fornecedores
+    # Grupo 7: Clientes e Fornecedores
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS clients (
         id INTEGER PRIMARY KEY,
@@ -136,7 +123,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 7: Pedidos e Pagamentos
+    # Grupo 8: Pedidos e Pagamentos
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS orders (
         id INTEGER PRIMARY KEY,
@@ -166,7 +153,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 8: Análises e Relatórios
+    # Grupo 9: Análises e Relatórios
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS analytics (
         id INTEGER PRIMARY KEY,
@@ -179,7 +166,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 9: Infraestrutura de Rede (Blockchain Nodes)
+    # Grupo 10: Infraestrutura de Rede (Blockchain Nodes)
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS network_nodes (
         id INTEGER PRIMARY KEY,
@@ -191,7 +178,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 10: Governança de Rede
+    # Grupo 11: Governança de Rede
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS governance (
         id INTEGER PRIMARY KEY,
@@ -215,7 +202,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 11: Suporte e Atendimento
+    # Grupo 12: Suporte e Atendimento
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS support_tickets (
         id INTEGER PRIMARY KEY,
@@ -228,7 +215,7 @@ def create_tables():
     )
     ''')
     
-    # Grupo 12: Auditoria e Logs
+    # Grupo 13: Auditoria e Logs
     cursor.execute('''
     CREATE TABLE IF NOT EXISTS audit_logs (
         id INTEGER PRIMARY KEY,

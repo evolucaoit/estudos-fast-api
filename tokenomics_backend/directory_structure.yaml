@@ -7,44 +7,81 @@ project:
   description: Estrutura do projeto API FastAPI com foco em Tokenomics.
   version: '1.0'
   structure:
-    .gitignore: null
     app:
+      .gitignore: null
       application:
         __init__.py: null
       background_tasks:
         __init__.py: null
+      ci_cd:
+        pipeline.yaml: null
       config:
+        app.py: null
+        config.py: null
         logging.yaml: null
         settings.yaml: null
-      db:
-        consensus_network.db: null
-        network_database.db: null
+        __init__.py: null
+      controllers:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      database:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      databases_structure.yaml: null
+      databases_structure_detailed.yaml: null
+      directory_structure.yaml: null
+      docs:
+        README.md: null
       domain:
         __init__.py: null
       events:
         __init__.py: null
+      infra:
+        ansible:
+          playbook.yaml: null
+        docker:
+          Dockerfile: null
+        gitops:
+          config.yaml: null
+        kubernetes:
+          deployment.yaml: null
+        terraform:
+          main.tf: null
       infrastructure:
         __init__.py: null
       main.py: null
+      middlewares:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      models:
+        app.py: null
+        config.py: null
+        __init__.py: null
       presentation:
         __init__.py: null
-      tests:
+      routes:
+        app.py: null
+        config.py: null
         __init__.py: null
-    ci_cd:
-      pipeline.yaml: null
-    docs:
-      README.md: null
-    infra:
-      ansible:
-        playbook.yaml: null
-      docker:
-        Dockerfile: null
-      gitops:
-        config.yaml: null
-      kubernetes:
-        deployment.yaml: null
-      terraform:
-        main.tf: null
-    scripts:
-      setup.sh: null
-      start.sh: null
+      schemas:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      scripts:
+        setup.sh: null
+        start.sh: null
+      services:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      tests:
+        app.py: null
+        config.py: null
+        __init__.py: null
+      utils:
+        app.py: null
+        config.py: null
+        __init__.py: null
